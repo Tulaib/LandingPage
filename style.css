@@ -1,0 +1,121 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.foot {
+  margin: 10px 0px;
+  font-size: 16px;
+  text-align: end;
+  font-weight: bold;
+  padding-right: 10px;
+}
+body {
+  background-color: white;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.header {
+  display: flex;
+  height: 10vh;
+}
+header {
+}
+.logo {
+  flex: 1;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.logo:hover {
+  font-size: 36px;
+  text-decoration: dotted;
+  cursor: pointer;
+}
+.logo:hover .dot {
+  width: 160px;
+}
+.logo:hover .dot2 {
+  width: 160px;
+}
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 0px;
+  background-color: black;
+  transition: 0.3s linear;
+}
+.dot2 {
+  position: absolute;
+  top: 54%;
+  right: 0;
+  height: 5px;
+  width: 0px;
+  background-color: #354c7c;
+  transition: 0.3s linear;
+}
+.dot:hover {
+  width: 100px;
+}
+ul {
+  list-style: none;
+  display: inline;
+}
+li {
+  display: inline;
+  padding-right: 50px;
+}
+ul > li:hover {
+  color: #354c7c;
+  cursor: pointer;
+}
+.mainbody {
+  height: 78vh;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-direction: column;
+  background-color: white !important;
+  width: 100%;
+}
+
+.product {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  padding-bottom: 80px;
+}
+.product > div {
+  flex: 1;
+}
+.product > div > h3 {
+  margin: 30px;
+  font-size: 24px;
+}
+.product > div > h2 {
+  margin: 0px 30px;
+}
+.product > div > p {
+  margin: 0px 30px;
+  color: gray;
+}
+.mainiimg {
+  position: relative;
+}
+.imgss {
+  position: absolute;
+  left: 0;
+  transition: 0.3s linear;
+}
+.mainiimg:hover .imgss {
+  left: 50%;
+}
+footer {
+  /* height: 10vh; */
+  border-top: 1px solid lightgray;
+  background-color: #354c7c;
+  color: white;
+}
